@@ -19,7 +19,7 @@
         "base_edi",
         "component_event",
         "mail",
-        "base_sparse_field_list_support",
+        "base_sparse_field",
         "queue_job",
     ],
     "external_dependencies": {"python": ["PyYAML"]},

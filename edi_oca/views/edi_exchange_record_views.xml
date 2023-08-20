@@ -33,14 +33,12 @@
                         name="action_open_related_record"
                         type="object"
                         string="Related record"
-                        attrs="{'invisible': [('res_id', '=', False)]}"
                     />
                     <!-- FIXME: this `invisible` domain does not work -->
                     <button
                         name="action_open_related_exchanges"
                         type="object"
                         string="Related exchanges"
-                        attrs="{'invisible': [('related_exchange_ids', '=', False)]}"
                     />
                     <button
                         name="action_retry"
@@ -117,7 +115,7 @@
                             name="related_odoo_record"
                             string="Related record"
                             groups="base.group_no_one"
-                            attrs="{'invisible': [('res_id', '=', 0)]}"
+                            invisible="[('res_id', '=', 0)]"
                         >
                           <field name="res_id" />
                           <field name="model" />
